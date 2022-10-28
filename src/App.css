@@ -1,0 +1,377 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  font-size: 1.4em;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+.main-nav {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  background: hsl(22, 70%, 50%);
+}
+
+.main-nav button {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.main-nav button:hover {
+  text-decoration: underline;
+}
+
+.main-nav * {
+  color: white;
+  font-size: 17px;
+  padding: 0 1em;
+}
+
+nav {
+  display: flex;
+  margin-left: auto;
+}
+
+footer {
+  min-height: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background: hsl(0, 2%, 32%);
+}
+
+.left-side-foot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 7vw;
+}
+
+.dev-mtn-logo {
+  height: 90px;
+  margin-right: 7vw;
+}
+
+.social-icon-shell {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.social-icon-shell a {
+  font-size: 14px;
+  margin: 0.7ch;
+  width: fit-content;
+  border-radius: 50%;
+  padding: 6px 8px;
+  background: hsl(198, 46%, 45%);
+}
+
+.banner-background {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: auto;
+  min-height: 300px;
+  color: hsl(0, 0%, 94%);
+}
+
+.recipe-header {
+  color: hsl(22, 70%, 55%);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+}
+
+.main-button {
+  min-width: fit-content;
+  width: 100px;
+  height: 30px;
+  padding: 0 12px;
+  color: hsl(0, 0%, 100%);
+}
+
+.blue-button {
+  color: hsl(0, 0%, 100%);
+  border: hsl(197, 71%, 33%);
+  background: hsl(197, 71%, 33%);
+}
+
+.banner-background .blue-button {
+  opacity: 0.78;
+  background: hsl(197, 81%, 33%);
+}
+
+.blue-button:hover {
+  opacity: 1;
+  background: hsl(197, 81%, 38%);
+}
+
+.recipe-text-shell {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+.recipe-text-shell > * {
+  margin: 0.3em;
+}
+
+.recipe-card {
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  box-shadow: 0px 2px 3px hsl(0, 31%, 41%);
+  background: hsl(28, 100%, 94%);
+  align-items: center;
+}
+
+.recipe-card img {
+  max-width: 200px;
+  height: auto;
+}
+
+.recipe-card h2 {
+  margin-bottom: 10px;
+}
+
+.recipe-card button {
+  margin: 10px;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+.instructions h2 {
+  margin: 1.2ch 0;
+  text-align: center;
+}
+
+.recipe-card-ctr {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.recipe-card-ctr > div {
+  margin: 10px;
+}
+
+.recipe-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recipe-view > * {
+  margin-bottom: 20px;
+}
+
+.search-recipes {
+  border-radius: 6px;
+  height: 24px;
+  min-width: 197px;
+  border: 0px;
+  background: transparent;
+}
+
+.rec-input-ctr {
+  margin-top: 15px;
+  background: hsla(22, 80%, 75%, 0.8);
+  border-radius: 6px;
+}
+
+.search-recipes:focus {
+  outline: 2px solid hsl(22, 70%, 45%);
+  caret-color: hsl(22, 70%, 25%);
+  color: hsl(22, 70%, 15%);
+}
+
+.instruction-page {
+  display: flex;
+}
+
+.instructions {
+  margin: 1em 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 40vw;
+  border: 1px solid hsl(0, 0%, 80%);
+  box-shadow: 1px 1px 2px hsl(0, 0%, 50%);
+  flex-wrap: wrap;
+  height: fit-content;
+  padding: 0 2ch;
+}
+
+.instructions p {
+  font-size: 0.9em;
+}
+
+.instructions > div {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.instructions > div > p {
+  width: 90%;
+  line-height: 2;
+}
+
+.instructions > p {
+  margin-bottom: 1.2em;
+}
+
+.add-recipe-form input {
+  width: 100px;
+  margin: 1ch;
+}
+
+.add-recipe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-recipe-form > div {
+  display: flex;
+  margin-top: 1em;
+  width: 100%;
+  min-width: 40vw;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.orange-button {
+  background: hsl(22, 70%, 50%);
+  border: 1px solid hsl(22, 70%, 30%);
+}
+
+.orange-button:hover {
+  background: hsl(22, 100%, 45%);
+}
+
+.add-recipe-form textarea {
+  width: 80%;
+  height: 80px;
+}
+
+.add-recipe-form input::placeholder,
+textarea::placeholder {
+  font-size: 1.1em;
+}
+
+@media screen and (max-width: 700px) {
+  .recipe-text-shell {
+    width: 70%;
+  }
+}
